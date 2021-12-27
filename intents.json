@@ -1,0 +1,167 @@
+{
+    "intents": [
+      {"tag": "greeting",
+       "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Ekse", "Hi"],
+       "responses": ["Hi stranger", "how can I help", "Ey watsupp", "namaste", "Hola", "Hey dude", "You again"],
+       "context": [""]
+      },
+
+      {"tag": "casual",
+      "patterns": ["How are you", "are you okay?", "how are you doing?", "is everything alright"],
+      "response": ["i am doing fine and hope you are too! please raise your concerns now so that i can help you with that"],
+      "context": [""]
+     },
+
+      {"tag": "goodbye",
+       "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
+       "responses": ["See you!", "Have a nice day", "Sure Bye", "Later dude", "Sayoonara", "Peace out", "Sure dude", "Ciao"],
+       "context": [""]
+      },
+      {"tag": "thanks",
+       "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+       "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure dude"],
+       "context": [""]
+      },
+      {"tag": "noanswer",
+       "patterns": [],
+       "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "I am still here dude"],
+       "context": [""]
+       },
+       {"tag": "name",
+        "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "are you real", "Tell me about yourself", "You are"],
+        "responses": ["I am MONTY", "My name is Monty", "You can call me monty for short", "I am Monty, my friends call me Monty", "Monty is my name"],
+        "context": [""]
+        },
+        
+        {"tag": "options",
+            "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+            "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query"],
+            "context": [""]
+            
+           },
+        {"tag": "payments",
+            "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+            "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"],
+            "context": [""]
+           },
+           {"tag": "opentoday",
+            "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+            "responses": ["this website is open 24/7 but the main office is open from 9am-9pm every day "],
+            "context": [""]
+            },
+
+            {"tag": "order_tracking",
+                "patterns": ["where is order with id 431B67?", "track order 562B78", "Where is my order with id 561A24?" ],
+            "responses": ["Delayed","Dispatched","On the Way!"],
+            "context": [""]
+            
+           },
+           {"tag": "order_components",
+            "patterns": ["order id 345A23 consists of?","List of components"],
+            "responses": ["order comprises of hardisk and bluetooth"],
+            "context": [""]
+            
+           },
+          {"tag": "missing_id",
+            "patterns": ["where is the order","where is my order","locate the order","Delivery date of order"],
+            "responses": ["Please enter with order ID   Example: Where is my order with ID 12345"],
+            "context": [""]
+            
+           },
+       {"tag": "Location",
+            "patterns": ["find order location 32712","What is the Location of order 23A31?"],
+            "responses": ["It is in Gujarat","It is in Delhi","It has reached Hyderabad","It has reached Jaipur"],
+            "context": [""]
+            
+           },
+            
+            {"tag": "forgot_password",
+            "patterns": ["I forgot my Login password?","what to do when someone forgets Login password?"],
+            "responses": ["Please enter your email id ,we will send a link on your email"],
+            "context": [""]
+             
+           },
+             {"tag": "email_id",
+             "patterns":["abx@gmail.com","abc@kiit.ac.in"],
+             "responses":["Link has been shared.Please change your password"],
+             "context": [""]
+              
+           },
+           {"tag": "manufacturing_problems",
+            "patterns": ["Find me a manufacturer nearby"],
+            "responses": ["The nearest manufacturer is in hyderabad"],
+            "context": [""]
+            
+           },
+          
+          {"tag": "key_customers",
+            "patterns": ["Our Target customers", "who are your key customers"],
+            "responses": ["Our target customers are in the range of age 20-40"],
+            "context": [""]
+            
+           },
+        {"tag": "supplier_info",
+            "patterns": ["What information is shared with supplier?"],
+            "responses": ["Production Schedule,Delivery Schedule,Proxy information about cost"],
+            "context": [""]
+            
+           },
+        {"tag": "highest_grossing",
+            "patterns": ["What is the highest grossing product?"],
+            "responses": ["Laptop with touch sensors and 360 rotation"],
+            "context": [""]
+            
+           },
+           {"tag": "connect_people",
+            "patterns": ["I want to meet the head of HR/IT/Projects department","I want to meet head IT Rakesh sharma."],
+            "responses": ["I will just check if he is available or on leave."],
+            "context": [""]
+            
+           },
+           
+           {"tag": "solve_problems",
+            "patterns": ["Lack of product clarity","the specifications of product is not clear to customer. what should we do"],
+            "responses": ["Please enter product id and customer id.specifications shall be sent to user"],
+            "context": [""]
+            
+           },
+            {"tag": "version_update",
+            "patterns": ["user needs the updated software version","user demands software updation"],
+            "responses": ["version updation request raised"],
+            "context": [""]
+            
+             },
+           {"tag": "HR_related_problem",
+            "patterns": ["problem related to Job design and analysis","query based on Workforce planning","Training and development issues are to be handled","Compensation and benefits of the working employee","Legal issues of department like accidents in the company"],
+            "responses": ["Please Contact the HR team for this problem."],
+            "context": [""]
+            
+           },
+      
+            {"tag": "customer_satisfaction",
+            "patterns": ["how was the customer response","Is the customer happy?","what was the customer feedback?"],
+            "responses": ["Customer was happy and has given good rating"],
+            "context": [""]
+            
+           },
+       {"tag": "maintainence",
+            "patterns": ["maintainence related queries recorded"],
+            "responses": ["website is not working, website misfuctioning"],
+            "context": [""]
+            
+           },
+           
+       {"tag": "invalid",
+            "patterns": ["Marry me","I love You","date me","chat with me","I am bored"],
+            "responses": ["Please ask organisation related query."],
+            "context": [""]
+           
+           },
+       {"tag": "noans",
+            "patterns": ["why","how","when","I","you"],
+            "responses": ["Can't Understand Your Question","please elaborate your question"],
+            "context": [""]
+            
+           }
+        ]
+    }
